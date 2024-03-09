@@ -16,7 +16,7 @@ body {
   background-color: hsl(24, 70%, 48%);
   color: rgb(93, 40, 4);
   display: flex;
-  padding: 0 20px; /* Add padding to navbar */
+  padding: 0 20px; 
 }
 .nav-item a{
   color: #FEEDCA;
@@ -29,11 +29,11 @@ body {
 .navlogo {
   height: 80px;
   width: 130px;
-  flex-shrink: 0; /* Prevent logo from shrinking */
+  flex-shrink: 0; 
 }
 
 .logo {
-  background-image: url("navchoc.png");
+  background-image: url("https://i.ibb.co/QP9CZX7/navchoc.png");
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -46,7 +46,7 @@ body {
 
 .addr-fir {
   color: rgb(229, 189, 125);
-  font-size: 1rem; /* Adjust font size */
+  font-size: 1rem; 
   margin-left: 18px;
 }
 
@@ -100,7 +100,7 @@ body {
 }
 .inmain {
   margin-left: 40px;
-  font-size: 25px; /* Adjust font size */
+  font-size: 25px; 
   margin-top: 10px;
 }
 .maintxt {
@@ -122,7 +122,6 @@ body {
 }
 .main li a {
   font-size: 20px;
-  /* Adjust the font size as needed */
   color: #ffe5f0;
 }
 .main li a{
@@ -139,29 +138,29 @@ body {
 }
 
 .side {
-  display: flex; /* Ensure flex layout */
+  display: flex; 
   align-items: center;
 }
 
 .side li {
-  margin-left: 10px; /* Adjust spacing */
+  margin-left: 10px; 
 }
 
 .side li:first-child {
-  margin-left: auto; /* Push the first item to the right */
+  margin-left: auto; 
 }
-/* CSS for desktop */
+
 @media screen and (min-width: 780px) {
   .navbar{
     height: auto;
     width: auto;
   }
   .main {
-    display: flex; /* Show the main navigation */
+    display: flex; 
   }
 
   .side {
-    display: flex; /* Hide the side navigation */
+    display: flex; 
   }
 
   
@@ -233,46 +232,45 @@ body {
     height: 120px;
     width: 180px;
     margin-right: 40px;
-     /* Prevent logo from shrinking */
   }
   .side {
-    display: block; /* Show the side navigation */
+    display: block; 
   }
 
   .side ul {
-    display: none; /* Hide the side navigation items */
+    display: none; 
   }
   .main li{
     margin-top: 15px;
   }
   
   .main {
-    margin-top: 10px; /* Reduce the top margin of the main navigation */
+    margin-top: 10px; 
   }
 
   .main li:first-child {
-    margin-top: 5px; /* Reduce the top margin of the first list item */
+    margin-top: 5px; 
   }
   
 }
 /* Default styles */
 .herosec {
   height: 380px;
-  width: 1333px; /* Adjust width as needed for three images side by side */
-  background-size: 480px 380px; /* Size of each image */
+  width: 1333px; 
+  background-size: 480px 380px; 
   background-repeat: no-repeat;
   background-image: 
-    url("Image-1t.webp"),
-    url("Image-2t.webp"),
-    url("Image-3t.webp");
-  background-position: left, center, right; /* Position each image */
+    url("https://i.ibb.co/72Rnzws/Image-1t.webp"),
+    url("https://i.ibb.co/9gjs6m2/Truff.webp"),
+    url("https://i.ibb.co/2Zjs4pq/Image-3t.webp");
+  background-position: left, center, right; 
   margin-top: 30px;
   margin-left: 10px;
 }
 .containers {
   display: flex;
-  justify-content: center; /* Horizontally center the content */
-  align-items: center; /* Vertically center the content */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .shop-now {
@@ -292,9 +290,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .herosec {
-    background-image: url("Image-1t.webp"); /* Display only the first image */
-    background-position: center; /* Center the image */
-    width: auto; /* Adjust width to fit the screen */
+    background-image: url("https://i.ibb.co/72Rnzws/Image-1t.webp"); 
+    background-position: center; 
+    width: auto; 
   }
   
 }
@@ -302,13 +300,13 @@ body {
   margin-top: 30px;
   margin-left: 10px;
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  flex-wrap: wrap; 
 }
 
 .image-wrapper {
   position: relative;
-  flex: 1 0 50%; /* Each image wrapper takes up 50% of the container width initially */
-  margin-bottom: 20px; /* Add some spacing between image wrappers */
+  flex: 1 0 50%; 
+  margin-bottom: 20px; 
 }
 
 .image-wrapper .image-name {
@@ -330,24 +328,24 @@ body {
 
 /* Image-specific styles */
 .imge1 {
-  background-image: url("Truff.webp");
+  background-image: url("https://i.ibb.co/9gjs6m2/Truff.webp");
 }
 
 .imge2 {
-  background-image: url("chocobars.webp");
+  background-image: url("https://i.ibb.co/BnxLf2w/chocobars.webp");
 }
 
 .imge3 {
-  background-image: url("Hotchoco.webp");
+  background-image: url("https://i.ibb.co/J7MNT1F/Hotchoco.webp");
 }
 
 .imge4 {
-  background-image: url("choco-nuts.webp");
+  background-image: url("https://i.ibb.co/9sCHK7V/choco-nuts.webp");
 }
 /* Media query for smaller screens */
 @media (max-width: 768px) {
   .herosec2 .image-wrapper {
-    flex-basis: 100%; /* Each image wrapper takes up 100% of the container width on smaller screens */
+    flex-basis: 100%; 
   }
   .imge1, .imge2, .imge3, .imge4 {
     
@@ -360,13 +358,13 @@ body {
   margin-top: 30px;
   margin-left: 10px;
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  flex-wrap: wrap; 
 }
 
 .image-wrapper {
   position: relative;
-  flex: 1 0 50%; /* Each image wrapper takes up 50% of the container width initially */
-  margin-bottom: 20px; /* Add some spacing between image wrappers */
+  flex: 1 0 50%; 
+  margin-bottom: 20px; 
 }
 
 .image-wrapper .image-name {
@@ -387,42 +385,42 @@ body {
 }
 
 .image1 {
-  background-image: url("seacarm.webp");
+  background-image: url("https://i.ibb.co/C10x41J/seacarm.webp");
 }
 
 .image2 {
-  background-image: url("pprchoco.webp");
+  background-image: url("https://i.ibb.co/HtSJ3D7/pprchoco.webp");
 }
 
 .image3 {
-  background-image: url("witcho.webp");
+  background-image: url("https://i.ibb.co/fQQBnXV/witcho.webp");
 }
 
 .image4 {
-  background-image: url("mlkchobar.webp");
+  background-image: url("https://i.ibb.co/dg7zyc2/mlkchobar.webp");
 }
 /*footer*/
 .footer {
-  background-color: #37474f; /* Set background color */
-  padding: 70px ; /* Add padding for spacing */
+  background-color: #37474f; 
+  padding: 70px ; 
 }
 
 .container {
-  display: flex; /* Use flexbox to create a flexible layout */
-  justify-content: space-between; /* Distribute items evenly with space between */
-  max-width: 1800px; /* Set maximum width for the container */
-  margin: 0 auto; /* Center the container horizontally */
+  display: flex; 
+  justify-content: space-between; 
+  max-width: 1800px; 
+  margin: 0 auto; 
 }
 
 .footer-col {
-  flex: 1; /* Set each column to take up equal space */
+  flex: 1; 
   width: 50%;
   padding: 0 15px;
 }
 
 .footer-col h4 {
-  color: #ffffff; /* Set text color */
-  margin-bottom: 35px; /* Add margin to separate heading from links */
+  color: #ffffff; 
+  margin-bottom: 35px; 
   text-transform: capitalize;
   font-weight: 500;
   position: relative;
@@ -430,18 +428,18 @@ body {
 }
 
 .footer-col ul {
-  list-style-type: none; /* Remove default list styles */
-  padding: 0; /* Remove default padding */
+  list-style-type: none; 
+  padding: 0; 
 }
 
 .footer-col ul li:not(:last-child){
-  margin-bottom: 10px; /* Add margin between list items */
+  margin-bottom: 10px; 
 
 }
 
 .footer-col ul li a {
-  text-decoration: none; /* Remove default underline */
-  color: #ccc6c6; /* Set text color */
+  text-decoration: none; 
+  color: #ccc6c6; 
   font-size: 16px;
   text-transform: capitalize;
   font-weight: 500;
@@ -453,23 +451,23 @@ body {
   color: #ffffff;
   padding-left: 10px;
 }
-/* Style social links */
+
 /* Style social links */
 .social-links {
-  display: flex; /* Use flexbox for social links */
-  justify-content: flex-end; /* Align social links to the right */
+  display: flex; 
+  justify-content: flex-end; 
 }
 
 .social-links a {
-  color: #cfd8dc; /* Set color for social icons */
-  font-size: 20px; /* Adjust icon size */
-  margin-left: 10px; /* Add margin between icons */
-  border-radius: 50%; /* Make the links circular */
-  transition: background-color 0.3s; /* Add transition for smooth hover effect */
+  color: #cfd8dc; 
+  font-size: 20px; 
+  margin-left: 10px; 
+  border-radius: 50%;
+  transition: background-color 0.3s;
 }
 
 .social-links a:hover {
-  background-color: #ffffff; /* Change background color on hover */
+  background-color: #ffffff;
 }
 
 
@@ -522,29 +520,27 @@ body {
 }
 @media screen and (max-width: 768px) {
   .container {
-    flex-direction: column; /* Stack columns vertically on smaller screens */
+    flex-direction: column; 
   }
 
   .footer-col {
-    margin-bottom: 30px; /* Add margin between columns */
+    margin-bottom: 30px; 
   }
   .footer-col form input[type="email"] {
-    width: 100%; /* Set input width to 100% */
+    width: 100%; 
     height: 100%;
-    margin-bottom: 10px; /* Add margin below the input */
+    margin-bottom: 10px; 
   }
 
   .footer-col form button[type="submit"] {
-    width: 100%; /* Set button width to 100% */
+    width: 100%;
   }
 
 }
 
-
-
 /* CSS for hamburger menu icon */
 .hamburger-menu {
-  display: none; /* Initially hide the hamburger menu on desktop */
+  display: none; 
 }
 
 .bar {
@@ -553,14 +549,6 @@ body {
   background-color: white;
   margin: 5px 0;
 }
-
-
-
-
-
-
-
-
 
 .review-cards-container {
   display: flex;
@@ -572,7 +560,7 @@ body {
   border-radius: 5px;
   padding: 20px;
   background-color: #8d6e6c;
-  width: 30%; /* Adjust the width as needed */
+  width: 30%; 
 }
 
 .review-header {
@@ -614,35 +602,31 @@ body {
   color: gold;
 }
 
-/* Default styles */
-
-/* Add your default CSS styles here */
-
 /* Media query for small screens */
 @media (max-width: 768px) {
   .review-card {
-    width: 100%; /* Make each review card take up full width */
-    margin-bottom: 20px; /* Add space between review cards */
+    width: 100%; 
+    margin-bottom: 20px; 
   }
 
   .review-header {
-    display: flex; /* Use flexbox for header */
-    align-items: center; /* Align items vertically */
-    margin-bottom: 10px; /* Add space between header and review text */
+    display: flex; 
+    align-items: center;
+    margin-bottom: 10px; 
   }
 
   .review-header .avatar {
-    width: 50px; /* Adjust avatar width */
-    height: 50px; /* Adjust avatar height */
+    width: 50px; 
+    height: 50px; 
     margin-right: 10px; /* Add space between avatar and review info */
   }
 
   .review-info {
-    flex: 1; /* Make review info take up remaining space */
+    flex: 1; 
   }
 
   .review-text {
-    margin-bottom: 10px; /* Add space between review text and rating */
+    margin-bottom: 10px; 
   }
 
   .rating {
