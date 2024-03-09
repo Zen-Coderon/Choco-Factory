@@ -1,0 +1,651 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  background-color: #E97451;
+}
+.navbar {
+  height: auto;
+  min-height: 75px;
+  background-color: hsl(24, 70%, 48%);
+  color: rgb(93, 40, 4);
+  display: flex;
+  padding: 0 20px; /* Add padding to navbar */
+}
+.nav-item a{
+  color: #FEEDCA;
+  font-size: medium;
+}
+.nav-item a:hover{
+  color: black;
+  font-size: medium;
+}
+.navlogo {
+  height: 80px;
+  width: 130px;
+  flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+.logo {
+  background-image: url("navchoc.png");
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+.out:hover {
+  height: 85px;
+  width: 140%;
+  border: 2px solid white;
+}
+
+.addr-fir {
+  color: rgb(229, 189, 125);
+  font-size: 1rem; /* Adjust font size */
+  margin-left: 18px;
+}
+
+.addr-sec {
+  color: rgb(105, 1, 1);
+  font-size: 2rem;
+}
+.navaddr {
+  margin-left: 20px;
+}
+
+.bordero:hover {
+  border: 6px solid rgb(79, 40, 17);
+  border-radius: 8px;
+}
+
+.navaddr .addr-icon i {
+  margin-right: 5px;
+}
+
+.navaddr p {
+  margin: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin-left: 10px;
+}
+
+.navbar ul li {
+  margin-right: 5px; 
+}
+
+.navbar ul li:last-child {
+  margin-right: 10px;
+  margin-left: 0px; 
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  padding: 4px 8px;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.addr-icon {
+  display: flex;
+  align-items: center;
+}
+.inmain {
+  margin-left: 40px;
+  font-size: 25px; /* Adjust font size */
+  margin-top: 10px;
+}
+.maintxt {
+  font-family: Helvetica;
+}
+.main li a{
+  padding-top: 15px;
+}
+.pmain{
+  text-align: center;
+  font-family: 17px sans-serif;
+  margin-top: 5px;
+  
+}
+.maintop{
+  text-align: center;
+  font-family: 35px sans-serif;
+  margin-top: 25px;
+}
+.main li a {
+  font-size: 20px;
+  /* Adjust the font size as needed */
+  color: #ffe5f0;
+}
+.main li a{
+  box-shadow: 0 0 5px #f3bed4,
+  0 0 5px #f3bed4 ;
+}
+.main li a:hover {
+  box-shadow: 0 0 5px #f3bed4, 
+  0 0 25px #f3bed4, 0 0 50px #f3bed4,0 0 50px #f3bed4;
+}
+.side li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+.side {
+  display: flex; /* Ensure flex layout */
+  align-items: center;
+}
+
+.side li {
+  margin-left: 10px; /* Adjust spacing */
+}
+
+.side li:first-child {
+  margin-left: auto; /* Push the first item to the right */
+}
+/* CSS for desktop */
+@media screen and (min-width: 780px) {
+  .navbar{
+    height: auto;
+    width: auto;
+  }
+  .main {
+    display: flex; /* Show the main navigation */
+  }
+
+  .side {
+    display: flex; /* Hide the side navigation */
+  }
+
+  
+  .navbar-toggler{
+    display:none;
+  }
+} 
+/* Responsive Media Query */
+@media screen and (max-width: 768px) {
+  
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
+    width: auto;
+  }
+
+  .navlogo{
+    float: inline-end;
+  }
+
+  .navaddr,
+  .inmain,
+  .side {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    
+  }
+
+  .navbar ul li {
+    margin: 5px 0;
+  }
+
+  .navbar ul li:last-child {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+/* CSS for hamburger menu */
+@media screen and (max-width: 1024px) {
+  .herosec2{
+    
+    display: flex;
+  }
+}
+@media screen and (max-width: 768px) {
+  
+  .navbar-toggler{
+    position: absolute;
+  top: 0;
+  right: 0;
+  }
+  .main {
+    padding: auto;
+    margin-right: 150px; /* Hide the main navigation */
+  }
+  .inmain{
+    margin-right: 170px;
+  }
+  .navaddr{
+    margin-right: 180px;
+    
+  }
+  .navlogo {
+    height: 120px;
+    width: 180px;
+    margin-right: 40px;
+     /* Prevent logo from shrinking */
+  }
+  .side {
+    display: block; /* Show the side navigation */
+  }
+
+  .side ul {
+    display: none; /* Hide the side navigation items */
+  }
+  .main li{
+    margin-top: 15px;
+  }
+  
+  .main {
+    margin-top: 10px; /* Reduce the top margin of the main navigation */
+  }
+
+  .main li:first-child {
+    margin-top: 5px; /* Reduce the top margin of the first list item */
+  }
+  
+}
+/* Default styles */
+.herosec {
+  height: 380px;
+  width: 1333px; /* Adjust width as needed for three images side by side */
+  background-size: 480px 380px; /* Size of each image */
+  background-repeat: no-repeat;
+  background-image: 
+    url("Image-1t.webp"),
+    url("Image-2t.webp"),
+    url("Image-3t.webp");
+  background-position: left, center, right; /* Position each image */
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.containers {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+}
+
+.shop-now {
+  padding: 10px 20px;
+  background-color: #420D09;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  
+}
+.trend{
+  text-align: center;
+  margin-top: 20px;
+}
+/* Media query for screens with a maximum width of 800 pixels */
+
+@media screen and (max-width: 768px) {
+  .herosec {
+    background-image: url("Image-1t.webp"); /* Display only the first image */
+    background-position: center; /* Center the image */
+    width: auto; /* Adjust width to fit the screen */
+  }
+  
+}
+.herosec2 {
+  margin-top: 30px;
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.image-wrapper {
+  position: relative;
+  flex: 1 0 50%; /* Each image wrapper takes up 50% of the container width initially */
+  margin-bottom: 20px; /* Add some spacing between image wrappers */
+}
+
+.image-wrapper .image-name {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  font-size: 14px;
+}
+
+.imge1, .imge2, .imge3, .imge4 {
+  height: 440px;
+  width:650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Image-specific styles */
+.imge1 {
+  background-image: url("Truff.webp");
+}
+
+.imge2 {
+  background-image: url("chocobars.webp");
+}
+
+.imge3 {
+  background-image: url("Hotchoco.webp");
+}
+
+.imge4 {
+  background-image: url("choco-nuts.webp");
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .herosec2 .image-wrapper {
+    flex-basis: 100%; /* Each image wrapper takes up 100% of the container width on smaller screens */
+  }
+  .imge1, .imge2, .imge3, .imge4 {
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.herosec3 {
+  
+  margin-top: 30px;
+  margin-left: 10px;
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.image-wrapper {
+  position: relative;
+  flex: 1 0 50%; /* Each image wrapper takes up 50% of the container width initially */
+  margin-bottom: 20px; /* Add some spacing between image wrappers */
+}
+
+.image-wrapper .image-name {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  font-size: 14px;
+}
+
+.image1, .image2, .image3, .image4 {
+  height: 440px;
+  width:650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image1 {
+  background-image: url("seacarm.webp");
+}
+
+.image2 {
+  background-image: url("pprchoco.webp");
+}
+
+.image3 {
+  background-image: url("witcho.webp");
+}
+
+.image4 {
+  background-image: url("mlkchobar.webp");
+}
+/*footer*/
+.footer {
+  background-color: #37474f; /* Set background color */
+  padding: 70px ; /* Add padding for spacing */
+}
+
+.container {
+  display: flex; /* Use flexbox to create a flexible layout */
+  justify-content: space-between; /* Distribute items evenly with space between */
+  max-width: 1800px; /* Set maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+.footer-col {
+  flex: 1; /* Set each column to take up equal space */
+  width: 50%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  color: #ffffff; /* Set text color */
+  margin-bottom: 35px; /* Add margin to separate heading from links */
+  text-transform: capitalize;
+  font-weight: 500;
+  position: relative;
+  
+}
+
+.footer-col ul {
+  list-style-type: none; /* Remove default list styles */
+  padding: 0; /* Remove default padding */
+}
+
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px; /* Add margin between list items */
+
+}
+
+.footer-col ul li a {
+  text-decoration: none; /* Remove default underline */
+  color: #ccc6c6; /* Set text color */
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 10px;
+}
+/* Style social links */
+/* Style social links */
+.social-links {
+  display: flex; /* Use flexbox for social links */
+  justify-content: flex-end; /* Align social links to the right */
+}
+
+.social-links a {
+  color: #cfd8dc; /* Set color for social icons */
+  font-size: 20px; /* Adjust icon size */
+  margin-left: 10px; /* Add margin between icons */
+  border-radius: 50%; /* Make the links circular */
+  transition: background-color 0.3s; /* Add transition for smooth hover effect */
+}
+
+.social-links a:hover {
+  background-color: #ffffff; /* Change background color on hover */
+}
+
+
+
+.footer-col h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom:-10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing:border-box;
+  width:50px;
+}
+.footer-col .social-links a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: rgba(red, green, blue, 0.9);
+  margin-right:0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 40px;
+
+}
+.footer-col form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-col input[type="email"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.footer-col button {
+  padding: 10px 20px;
+  background-color: #555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.footer-col button:hover {
+  background-color: #333;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack columns vertically on smaller screens */
+  }
+
+  .footer-col {
+    margin-bottom: 30px; /* Add margin between columns */
+  }
+  .footer-col form input[type="email"] {
+    width: 100%; /* Set input width to 100% */
+    height: 100%;
+    margin-bottom: 10px; /* Add margin below the input */
+  }
+
+  .footer-col form button[type="submit"] {
+    width: 100%; /* Set button width to 100% */
+  }
+
+}
+
+
+
+/* CSS for hamburger menu icon */
+.hamburger-menu {
+  display: none; /* Initially hide the hamburger menu on desktop */
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+
+
+
+
+
+
+
+
+.review-cards-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.review-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #8d6e6c;
+  width: 30%; /* Adjust the width as needed */
+}
+
+.review-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.review-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviewer-name {
+  margin: 0;
+}
+
+.review-date {
+  margin: 0;
+  color: #888;
+}
+
+.review-text {
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-size: 20px;
+}
+
+.star {
+  color: gold;
+}
+
+/* Default styles */
+
+/* Add your default CSS styles here */
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+  .review-card {
+    width: 100%; /* Make each review card take up full width */
+    margin-bottom: 20px; /* Add space between review cards */
+  }
+
+  .review-header {
+    display: flex; /* Use flexbox for header */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px; /* Add space between header and review text */
+  }
+
+  .review-header .avatar {
+    width: 50px; /* Adjust avatar width */
+    height: 50px; /* Adjust avatar height */
+    margin-right: 10px; /* Add space between avatar and review info */
+  }
+
+  .review-info {
+    flex: 1; /* Make review info take up remaining space */
+  }
+
+  .review-text {
+    margin-bottom: 10px; /* Add space between review text and rating */
+  }
+
+  .rating {
+    font-size: 20px; /* Adjust rating font size */
+  }
+}
