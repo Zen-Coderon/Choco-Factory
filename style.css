@@ -633,3 +633,83 @@ body {
     font-size: 20px; /* Adjust rating font size */
   }
 }
+.bn53 {
+  background-color: #e35543;
+  padding: 7px;
+  width: 100px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  animation: bn53bounce 4s infinite;
+  cursor: pointer;
+  
+}
+
+@keyframes bn53bounce {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1) rotate(-5deg);
+  }
+
+  25% {
+    transform: scale(1) rotate(5deg);
+  }
+
+  30% {
+    transform: scale(1) rotate(-3deg);
+  }
+
+  35% {
+    transform: scale(1) rotate(2deg);
+  }
+
+  40% {
+    transform: scale(1) rotate(0);
+  }
+}
+.bn31 {
+  background-image: linear-gradient(to right, #006175 0%, #00a950 100%);
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: #00a84f;
+  display: block;
+  height: 50px;
+  font-size: 1.4em;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 7em;
+  z-index: 2;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.bn31:hover {
+  color: #fff;
+}
+
+.bn31 .bn31span {
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.bn31:hover .bn31span {
+  background: transparent;
+}
