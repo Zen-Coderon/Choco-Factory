@@ -1,5 +1,4 @@
 # PRODIGY_WD_01
-Web Dev Task-1 Of Internship Program By Prodigy
 Welcome to Our Choco Factory Website
 This repository showcases our chocolate factory website, designed to provide a delightful experience for our visitors. Below, you'll find important information about the website and its contents.
 
